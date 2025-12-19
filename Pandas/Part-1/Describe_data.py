@@ -9,4 +9,4 @@ data = {
 
 df = pd.DataFrame(data)
 print(df.describe())
-print(df)
+# print(df)

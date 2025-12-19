@@ -23,15 +23,15 @@ print(f"\nSample data multiple columns (via passing variable): \n{df[subset_of_s
 #High Salary (filter row data)
 filter_row = df[df['Salary'] > 25000] ##will return dataframe
 #filter_row = df['Salary'] > 25000   ##Will return boolean
-print(f"\nHighly paid employees : \n{filter_row}")
+print(f"\nHighly paid employees > 25000 : \n{filter_row}")
 
 
 #Filter row with multiple condition
 filter_row_1 = df[(df['Salary']>25000) & (df['Salary']<30000)]
-print(f"\nHighly paid employees : \n{filter_row_1}")
+print(f"\nHighly paid employees > 25000 AND < 30000 : \n{filter_row_1}")
 
 
 #Filter row with multiple condition
 filter_row_2 = df[(df['Salary']>20000) | (df['Age']<12)]
-print(f"\nHighly paid employees : \n{filter_row_2}")
+print(f"\nHighly paid employees > 20000 or Having Age > 12 : \n{filter_row_2}")
 
